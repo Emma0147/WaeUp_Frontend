@@ -3,16 +3,21 @@ module.exports = {
   content: [
     './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/app/**/*.{js,ts,jsx,tsx,mdx}'
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-      },
-    },
+      colors: {
+        secondary: 'rgb(11 11 135)',
+        primaryBg: 'var(--primary-bg-color)',
+        secondaryBg: 'var(--secondary-bg-color)',
+        goldColor: 'var(--gold-color)',
+        primaryText: 'var(--primary-text-color)',
+        secondaryBg2: 'var(--secondary-bg-color-2)',
+        primaryCta: 'var(--primary-cta-color)'
+        // disabledColor: 'var(--disabled-gold-color)'
+      }
+    }
   },
-  plugins: [],
-}
+  plugins: []
+};
